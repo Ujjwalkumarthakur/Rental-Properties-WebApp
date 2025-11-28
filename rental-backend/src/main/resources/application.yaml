@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: rental-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rental_db
+    username: rental_user
+    password: rental_password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: "this_is_a_super_long_secret_key_32_bytes_min"
+  expiration-ms: 3600000
